@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-
+import Footer from './Footer'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 const Getproducts = () => {
 
 // initializing your hooks
-  
+  const [search, setSearch] = useState("");
   const[loading,SetLoading]=useState("")
   const[error,SetError]=useState("")
   const[products,SetProducts]=useState([])
@@ -54,6 +54,7 @@ const Getproducts = () => {
       <p>glow like never before {"\u2728"}</p>
       <p>Your one-stop shop for cosmetics</p>
 
+      
      
       <br /><br />
     
@@ -71,6 +72,7 @@ const Getproducts = () => {
       <div className='col-md-3 justify-content-center '>
         <div className='card shadow mt-3  '>
           <img src={img_url + product.product_photo } alt="" className='product_img'/>
+          
 
           <div className='card-body'>
             <h3 className='text-success'>{product.product_name}</h3>
@@ -98,6 +100,7 @@ const Getproducts = () => {
 
         
     ))}
+    ,
     </div>
   )
 }

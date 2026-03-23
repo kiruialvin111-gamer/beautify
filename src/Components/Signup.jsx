@@ -2,8 +2,15 @@ import React, { use, useState } from 'react'
 import { Link } from 'react-router-dom'
 import  axios  from 'axios'
 
+
+
+
 const Signup = () => {
+  
+
   // initialize the hooks
+ 
+  
   const[username,SetUsername]=useState("")
   const[email,SetEmail]=useState("")
   const[phone,SetPhone]=useState("")
@@ -84,6 +91,9 @@ const Signup = () => {
         <p className='text-danger'>{error}</p>
 
 
+        
+
+
         <input type="text" placeholder='Enter your username' className='form-control' required value={username} onChange={(e)=>SetUsername(e.target.value)}/>
         <br />
         
@@ -93,7 +103,7 @@ const Signup = () => {
         <input type="tel" placeholder='Enter your phone number' className='form-control'required value={phone} onChange={(e)=>SetPhone(e.target.value)}/>
         <br />
         
-        <input type="password" placeholder='enter your password' className='form-control'rel=''value={password} onChange={(e)=>SetPassword(e.target.value)}/>
+        <input type="password" placeholder='enter your password' className='form-control'rel=''value={password} onChange={(e)=>SetPassword(e.target.value)} />
         <br />
 
         <input type="submit" value="sign up" className='bg-info w-100 form-control text-white' />

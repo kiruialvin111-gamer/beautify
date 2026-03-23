@@ -65,6 +65,7 @@ const Addproducts = () => {
 
 
   return (
+    
     <div className='row justify-content-center mt-3'>
        <div className='card shadow col-md-6'>
         <h2>upload products</h2>
@@ -93,6 +94,8 @@ const Addproducts = () => {
 
        </div>
     </div>
+   
+    
   )
 }
 

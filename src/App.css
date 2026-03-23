@@ -1,4 +1,7 @@
 .App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -49,3 +52,34 @@
     transform: rotate(360deg);
   }
 }
+.footer{
+  background: #030303;
+  color: #f80e0e;
+  padding: 40px 20px 10px;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 30px;
+}
+
+.social-icons ion-icon:hover{
+  color: #00acee;
+  transform: scale(1.2);
+}
+
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+ html,body,#root{
+  height: 100%;
+  margin: 0;
+ }
+.content{
+  flex: 1;
+}
+
